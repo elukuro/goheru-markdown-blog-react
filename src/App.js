@@ -1,25 +1,42 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import glob from 'glob';
+import UiHeader from './components/header.js';
+class App extends React.Component {
+  constructor(props) {
+    super(props);
+    this.paths = {};
+  }
+  generateData(){
+    const blogs = glob.sync('./content/*.md');
+    return blogs
+    // const blogSlugs = blogs.map(file =>
+    //     file
+    //     .split('/')[1]
+    //     .replace(/ /g, '-')
+    //     .slice(0, -3)
+    //     .trim()
+    // );
+    // const paths = blogSlugs.map(slug => ({
+    //     url:`/posts/${slug}`,
+    //     title:`${slug.replace(/-/g,' ')}`,
+    // }))
+    // this.setState({paths: paths});
+  };
+  
+  componentDidMount() {
+    this.generateData()
+  }
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+  render() {
+      return (
+        <div className="container mx-auto max-w-lg">
+              <UiHeader isHomepage={true}/>
+              <div className="font-sans">
+  
+              </div>
+          </div>
+    );
+  }
 }
 
 export default App;
