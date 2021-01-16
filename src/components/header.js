@@ -1,13 +1,16 @@
+import {
+    Link,
+  } from "react-router-dom";
+  
 function UirenderBackToHome(props){
     if(!props.isHomepage){
         return(
-            <a  href="/" className="text-xs underline text-blue-600 antialiased ">Back to home 🏠</a>
+            <Link to="/" className="text-xs underline text-blue-600 antialiased ">Back to home 🏠</Link>
         )
     }
     return(
         <a className="text-xs underline text-blue-600 antialiased " href="http://goheru.com">Back to goheru 🏠</a>
     )
-    
 }
 function Header(props) {
     const heading = "<LazyDevTips/>"
