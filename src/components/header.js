@@ -13,7 +13,7 @@ function UirenderBackToHome(props){
     )
 }
 function Header(props) {
-    const heading = "<LazyDevTips/>"
+    const heading = "<DevTips/>"
     return(
         <div className="mt-10 mb-10 container mx-auto max-w-lg">
             <h1 className="text-6xl orange font-extrabold">{heading}</h1>
