@@ -14,5 +14,5 @@ const unique = [... new Set(a)]
 console.log(unique)
 
 
-// result is [1,2,3,12]
+// result is [1,2,3,12] , easy isn't it 
 ```
