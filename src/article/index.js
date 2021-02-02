@@ -2,7 +2,8 @@ const URL =
 [
     'use-no-var-anymore',
     'how-to-switch-value',
-    'unique-array',
+    'make-array-values-unique',
+    'how-to-shorten-if-else-statment',
 ];
 
 export default URL
