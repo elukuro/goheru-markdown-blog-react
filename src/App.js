@@ -37,14 +37,18 @@ function App() {
     <Router>
       <Switch>
         <Route exact path="/">
-          <UiHeader isHomepage={true}/>
-          <div className="container mx-auto max-w-lg">
-            <ArticleList/>
+          <div className='container mx-auto px-4'>
+            <UiHeader isHomepage={true}/>
+            <div className="container mx-auto max-w-lg">
+              <ArticleList/>
+            </div>
           </div>
         </Route>
         <Route path="/posts/:slug">
+        <div className='container mx-auto px-4'>
           <UiHeader/>
           <BlogPost/>
+        </div>
         </Route>
       </Switch>
     </Router>
