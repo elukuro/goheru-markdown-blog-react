@@ -2,8 +2,9 @@ const URL =
 [
     'use-no-var-anymore',
     'how-to-switch-value',
-    'make-array-values-unique',
+    'unique-array',
     'how-to-shorten-if-else-statment',
+    'no-undefined-value-pass-in-your-functions-anymore'
 ];
 
-export default URL
+export default URL.reverse()
