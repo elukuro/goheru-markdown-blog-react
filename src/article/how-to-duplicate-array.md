@@ -1,6 +1,6 @@
 ---
 title: "How to duplicate array"
-date: "12 Feb 2021"
+date: "13 Mar 2021"
 ---
 
 If I run following script, something wierd will happen, can you tell me ?  
