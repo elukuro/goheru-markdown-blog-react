@@ -19,7 +19,7 @@ output for that example will be something like this
 Yes the value from `duplicate` array is correct as we expected, but why arrayA value is change ? 
 
 
-this happen because we did assigment `duplicate = arrayA` and because assigment in array is work as reference, so when we try to copy using assigment 
+this happen because we did assignment `duplicate = arrayA` and because assignment in array is work as reference, so when we try to copy using assignment 
 what happen is actually it will only copy the reference to the original array and not the value of the array itself.
 
 
