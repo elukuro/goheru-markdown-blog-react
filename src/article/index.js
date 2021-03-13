@@ -5,7 +5,8 @@ const URL =
     'unique-array',
     'how-to-shorten-if-else-statment',
     'no-undefined-value-pass-in-your-functions-anymore',
-    'how-to-duplicate-array'
+    'how-to-duplicate-array',
+    'some-git-command-that-might-you-dont-know',
 ];
 
 export default URL.reverse()
