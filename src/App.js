@@ -22,8 +22,8 @@ function ArticleList() {
       {
         articleList.map((article,index)=>{
           return(
-            <li key={index} className="text-xl underline text-black-400 antialiased mb-3">
-              <Link className="capitalize" to={'/posts/'+article}>{article.split('-').join(' ')}</Link>
+            <li key={index} className="text-sm underline text-black-400 antialiased mb-3">
+              <Link className="capitalize" to={'/posts/'+article}>Tips {article.split('-').join(' ')}</Link>
             </li>
           )
         })  

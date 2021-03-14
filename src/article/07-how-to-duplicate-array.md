@@ -20,7 +20,7 @@ Yes the value from `duplicate` array is correct as we expected, but why arrayA v
 
 
 this happen because we did assignment `duplicate = arrayA` and because assignment in array is work as reference, so when we try to copy using assignment 
-what happen is actually it will only copy the reference to the original array and not the value of the array itself.
+what happen actualy is copy the reference to the original array and not the value of the array itself.
 
 
 to handle this problem you can use spread operator to clone `arrayA`, spread operator is a new feature that introduce in ES6,

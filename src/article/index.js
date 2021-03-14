@@ -1,12 +1,3 @@
-const URL =
-[
-    'use-no-var-anymore',
-    'how-to-switch-value',
-    'unique-array',
-    'how-to-shorten-if-else-statment',
-    'no-undefined-value-pass-in-your-functions-anymore',
-    'some-git-command-that-might-you-dont-know',
-    'how-to-duplicate-array',
-];
+const URL = require.context('./', false, /\.md$/).keys().map((item)=>item.slice(0,-3).substring(2));
 
 export default URL.reverse()
