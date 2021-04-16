@@ -1,6 +1,6 @@
 ---
 title: "Functional or class component"
-date: 16 Apr 2021"
+date: "16 Apr 2021"
 ---
 
 Component is a reusable part that should be able to use anywhere inside user interface. there are two way to create component 
