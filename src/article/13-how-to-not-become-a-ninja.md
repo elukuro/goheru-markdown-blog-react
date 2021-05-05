@@ -7,11 +7,10 @@ date: "23 Apr 2021"
 
 Long time ago ninja use this technique to test his ability, passion and skill from developers, a principal developer use code from ninja as an excercises, event experienced developer write ninja kode better than a ninja itself. How ninja create code ? 
 
-Tulis Kode sesingkat mungkin
+<!-- Tulis Kode sesingkat mungkin
 Seorang ninja akan membuat code sependek mungkin, hal itu akan menunjukan bahwa mereka hebat dan pintar, mari lihat bagaimana seorang ninja membuat kode yang efisien dengan menggunakan trenary code
 ‘?’ i = i ? i < 0 ? Math.max(0, len + i) : i : 0; 
-Terlihat keren dan simple, jika seorang developer menemukan kode ini, dia akan menghabiskan seumur hidupnya hanya untuk mencari jawaban bahwa variabel i bernilai 0. Jika kamu ingin menjadi seorang ninja, saran pertama adalah tulis kode sesingkat mungkin.
-
+Terlihat keren dan simple, jika seorang developer menemukan kode ini, dia akan menghabiskan seumur hidupnya hanya untuk mencari jawaban bahwa variabel i bernilai 0. Jika kamu ingin menjadi seorang ninja, saran pertama adalah tulis kode sesingkat mungkin. -->
 
 ## write code as sort as possible 
 a ninja will create a code as sort as possible, this attitude will show that ninja a smart and great, let see how a ninja write an effecient code with trenarry code
@@ -26,6 +25,9 @@ woow looks so cool and simple, if a developer find this code, he will spend his 
 Variabel satu huruf
 Salah satu jalan untuk membuat kode sesingkat mungkin adalah dengan menulis variabel sependek mungkin seperti a,b,c,d.
 Sebuah variabel pendek akan sanggat keren karena ia akan menghilang seperti layaknya seorang ninja sejati ditengah kegelapan, ia tidak akan ditemukan dengan menggunakan “search” dari editor manapun, dan bahkan saat seseorang telah menemukanya, mereka tidak akan tahu apa makna sebenarnya dari variabel ‘a’ sebelum melihat seluruh jejak yang telah ditinggalkan.
+## One digit variable 
+one way to create shorter code is to define variable name as short as posibble sucs as a,b,c,d.
+a short variable will look cools because he can disapear like a real ninja in the dark, he can't find by search from any editor and even when someone already find it, 
 Gunakan Singkatan
 Bahkan jika peraturan mengharuskan seorang ninja untuk menggunakan nama variabel lebih dari satu huruf mereka akan menggunakan singkatan.
 list → lst
