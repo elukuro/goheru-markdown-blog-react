@@ -9,7 +9,7 @@ function UirenderBackToHome(props){
         )
     }
     return(
-        <a className="text-xs underline text-blue-600 antialiased " href="http://goheru.com">Back to goheru 🏠</a>
+        <a className="text-xs underline text-blue-600 antialiased " href="https://goheru-project.web.app/#/">Back to goheru 🏠</a>
     )
 }
 function Header(props) {
