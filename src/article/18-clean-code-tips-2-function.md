@@ -1,5 +1,5 @@
 ---
-title: "Clean code tips #1: Function"
+title: "Clean code tips #2: Function"
 date: "11 September 2021"
 ---
 
