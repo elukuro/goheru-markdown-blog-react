@@ -9,7 +9,7 @@ date: "16 Jan 2021"
   if(true){
     var a = 'var is wild' 
   }
-  alert(a);
+  alert(a);   // works
 ```
 
 Since `var` ignores blocks, `a` will become a global variable and your browser will show an alert that contains variable `a`'s value.
