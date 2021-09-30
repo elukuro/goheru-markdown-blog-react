@@ -1,22 +1,23 @@
 ---
-title: "Use no var anymore"
+title: "Reducing the use of var"
 date: "16 Jan 2021"
 ---
-> Once upon a time there is a creature that destructive, seeking a clumpsy developer to lose their guard and attack them with their clow.
+> Long ago there used to be a wild creature, who would attack developers with its claws if they lowered their guard
 
-The `var` is very wild because `var` has no block scope which mean they are "the beast" that visible outside blocks. here some example:
+`var` is very wild because it has no block scope which makes it a "beast" that is visible outside the blocks as shown below:
 ```
   if(true){
     var a = 'var is wild' 
   }
-  alert(a);
+  alert(a); // works
 ```
 
-since `var` ignore blocks, `var a` will become global variable and your browser will show alert that contain variable `a` value.
+Since `var` ignores blocks, `a` will become a global variable and your browser will show an alert that contains variable `a`'s value.
 
-`var` also can't be `block-or` and `loop-local` which mean it's just ignore `for loop` block.
+Apart from simple program blocks, `var` also ignores things like  `for-loop` blocks since it is not `block` and `loop-local`.
 
-if you're using `var` inside function, then `var` become a function-level variable
+If `var` is declared and being used within a function, then it becomes a function-level variable, meaning it will ignore blocks within the function but cannot be accessed outside the function.
+
 ```
   function sayHi() {
     if (true) {
@@ -30,30 +31,34 @@ if you're using `var` inside function, then `var` become a function-level variab
   alert(a); // ReferenceError: a is not defined
 ```
 
-when we create `var` and redeclare it below the first variable, they will ignore the old one and use newest variable value
+If we have already declared and initialized a `var` and decide to redeclare it, the program will simply ignore the previous value and work with the newly initialized value.
+
 ```
 var user = "Pete";
-var user = "John"; // this "var" does nothing (already declared)
-// ...it doesn't trigger an error
+var user = "John";  // this "var" does nothing (already declared)
+                    // ...it doesn't trigger an error
 
 alert(user); // John
 ```
 
-remember when I mention that `var` is a global variable, it's also mean that they are able to declare below their use, so technicaly move them above
+Remember when I mentioned that `var` is a global variable? This also means that you can declare them below their implementation (or use) and you still wont encounter any errors. 
+
+This means that the following two code segments work the same:
+
 ```
 function sayHi() {
   phrase = "Hello";
 
   alert(phrase);
 
-  var phrase;
+  var phrase;       // declared below
 }
 sayHi();
 ```
-as same as with
+
 ```
 function sayHi() {
-  var phrase;
+  var phrase;       // declared above
 
   phrase = "Hello";
 
@@ -62,6 +67,6 @@ function sayHi() {
 sayHi();
 ```
 
-because of this, I suggest you to use `let` and `cost` instead of `var` they are more modern and clean in term of block. 
+It is due to this, that I suggest you use `let` and `cost` instead of `var` as they are more modern and less wild, i.e. you have more control over scope (or block) resolution as compared to what you would have with `var`.   
 
 Reference: [The old var](https://javascript.info/var)
