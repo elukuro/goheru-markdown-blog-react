@@ -2,7 +2,7 @@
 title: "Don't use float"
 date: "28 Mar 2021"
 ---
-### Of course you can use float don't be silly, but use it wisely because you have to pay it with clearfix 🙀
+### Sure you can use float don't be silly, but use it wisely because you have to pay with clearfix 🙀
 ```
 <div style="
     background: blue;
@@ -15,7 +15,7 @@ date: "28 Mar 2021"
     <div style="background:red;float:left;height: 100px;width: 100px;">child 3</div>
 </div>
 ```
-When we create a web, sometimes we have to create two div that divided equaly to container width, our approach is usually something like this 
+Sometimes we need to make two div divided equaly to container width, usually we do something like this 
 ```
     <div class="container">
         <div style="
@@ -34,7 +34,8 @@ When we create a web, sometimes we have to create two div that divided equaly to
         </div>
     </div>
 ```
-it's fine but when this element getting more complex, it's hard to make it propper unless you put some clearfix at your container, but you actually can do a better using `flex` 
+This approch is fine but when those element getting more complex you have to put some clearfix at your container to normalize your float.
+Here `flex` come to the rescue make it more simple and efficient
 
 ```
 <div class="container" style="
