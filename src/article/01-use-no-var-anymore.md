@@ -4,7 +4,7 @@ date: "16 Jan 2021"
 ---
 > Long ago there used to be a wild creature, who would attack developers with its claws if they lowered their guard
 
-`var` is very wild because it has no block scope which makes it a "beast" that is visible outside the blocks. here are some examples:
+`var` is very wild because it has no block scope which makes it a "beast" that is visible outside the blocks as shown below:
 ```
   if(true){
     var a = 'var is wild' 
