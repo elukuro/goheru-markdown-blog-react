@@ -3,7 +3,7 @@ title: "Swapping values between variables"
 date: "25 Jan 2021"
 ---
 
-You often come across coding skill sessions where they test your ability to swap the values of two variables. A mediocre developer usually does this via the 'third var technique' shown below: 
+You often come across coding skill sessions where they test your ability to swap the values of two variables. A mediocre developer usually does this via the `third var technique` shown below: 
 
 ```
 // they used var here instead of let :( what a shame
