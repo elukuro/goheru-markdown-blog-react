@@ -24,7 +24,7 @@ let b = 15;
 console.log(a, b);
 ```
 
-Infact the most experienced of developers extend this idea and use the `rhapsodic technique` as shown below:
+Infact the most experienced developers extend this idea and use the `rhapsodic technique` as shown below:
 
 ```
 let [a,b] = [10,15];
