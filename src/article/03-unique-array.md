@@ -2,13 +2,15 @@
 title: "How to make an array unique without headache"
 date: "31 Jan 2021"
 ---
-The fastest and shortest way that I know to remove duplicate in Array 
 
+The fastest and shortest way to remove duplicate elements from an array is by making a set of the array itself. Since sets consider duplicate elements the same, it will technically return an array containing every element once.
+
+<!-- The fastest and shortest way that I know to remove duplicate in Array  -->
 
 ```
-const a =[1,2,3,12,3,1,2,3];
+const a =[1,2,3,12,3,1,2,3];    //contains duplicate entries
 
-// use Set to remove duplicate array
+// use Set to remove duplicate entries
 
 const unique = [... new Set(a)]
 console.log(unique)
