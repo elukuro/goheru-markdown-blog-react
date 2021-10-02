@@ -1,13 +1,15 @@
 ---
-title: "No undefined value at function params anymore"
+title: "Providing default values for params"
 date: "12 Feb 2021"
 ---
-We can make our functions as a default value, It's make your function return default value instead of `undefined`
+
+When we want our functions to be able to run on variable number of arguments, we can set `default values` for those arguments. This way, if one of the arguments arent provided, the function can still proceed rather than being `undefined`
 
 ```
-    function multiply(a=1 ,b = 1) {
+    function multiply(a = 1 ,b = 1) {
         return a * b;
     }
+
     console.warn(multiply(5,2))
     // expected output : 10 
 

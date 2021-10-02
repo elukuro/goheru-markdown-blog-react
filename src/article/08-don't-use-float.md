@@ -1,8 +1,12 @@
 ---
-title: "Don't use float"
+title: "Don't use float attribute"
 date: "28 Mar 2021"
 ---
-### Of course you can use float don't be silly, but use it wisely because you have to pay it with clearfix 🙀
+
+### The use of float is heavily discouraged when making divisions
+
+Of course you can use float values, don't be silly, but make sure you use it wisely, because sometimes you may have to pay for it by using the clear-fix 🙀
+
 ```
 <div style="
     background: blue;
@@ -15,7 +19,7 @@ date: "28 Mar 2021"
     <div style="background:red;float:left;height: 100px;width: 100px;">child 3</div>
 </div>
 ```
-When we create a web, sometimes we have to create two div that divided equaly to container width, our approach is usually something like this 
+Sometimes when we create a website, we'll have to create `div`s that divide the container width equaly. When doing so, our approach is usually something like this : 
 ```
     <div class="container">
         <div style="
@@ -34,7 +38,11 @@ When we create a web, sometimes we have to create two div that divided equaly to
         </div>
     </div>
 ```
-it's fine but when this element getting more complex, it's hard to make it propper unless you put some clearfix at your container, but you actually can do a better using `flex` 
+
+The above method works fine when the elements are simple. However as they get more and more complex, it gets harder to make proper divisions using float values unless you use the clear-fix in your container. 
+
+An even better way of doing this is actually by using the `flex` value for the `display` attribute as shown below: 
+
 
 ```
 <div class="container" style="
