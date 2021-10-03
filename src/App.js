@@ -23,7 +23,7 @@ function ArticleList() {
         return (
           <li
             key={index}
-            className="text-sm underline text-black-400 antialiased mb-3"
+            className="text-sm underline text-black-400 dark:text-gray-200 antialiased mb-3"
           >
             <Link className="capitalize" to={"/posts/" + article}>
               Tips {articleList.length - index}
