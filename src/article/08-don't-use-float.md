@@ -1,21 +1,27 @@
 ---
-title: "Don't use float"
+title: "Don't use float attribute"
 date: "28 Mar 2021"
 ---
-### Sure you can use float don't be silly, but use it wisely because you have to pay with clearfix 🙀
+
+### The use of float is heavily discouraged when making divisions
+
+Of course you can use float values, don't be silly, but make sure you use it wisely, because sometimes you may have to pay for it by using the clear-fix 🙀
+
 ```
 <div style="
     background: blue;
     display: block;
-    clear: both; // cost that I mean 
-    overflow: hidden; // just whyyy 😔  
+    clear: both; // cost that I mean
+    overflow: hidden; // just whyyy 😔
 "><p>container here </p>
     <div style="background:red;float:left;height: 100px;width: 100px;">child 1</div>
     <div style="background:red;float:left;height: 100px;width: 100px;">child 2</div>
     <div style="background:red;float:left;height: 100px;width: 100px;">child 3</div>
 </div>
 ```
-Sometimes we need to make two div divided equaly to container width, usually we do something like this 
+
+Sometimes when we create a website, we'll have to create `div`s that divide the container width equaly. When doing so, our approach is usually something like this :
+
 ```
     <div class="container">
         <div style="
@@ -34,8 +40,10 @@ Sometimes we need to make two div divided equaly to container width, usually we 
         </div>
     </div>
 ```
-This approch is fine but when those element getting more complex you have to put some clearfix at your container to normalize your float.
-Here `flex` come to the rescue make it more simple and efficient
+
+The above method works fine when the elements are simple. However as they get more and more complex, it gets harder to make proper divisions using float values unless you use the clear-fix in your container.
+
+An even better way of doing this is actually by using the `flex` value for the `display` attribute as shown below:
 
 ```
 <div class="container" style="

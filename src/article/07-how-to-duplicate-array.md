@@ -1,9 +1,9 @@
 ---
-title: "How to duplicate array"
+title: "Duplicating an array"
 date: "13 Mar 2021"
 ---
 
-If I run following script, something wierd will happen, can you tell me ?  
+When the following script is run, we come across an unexpected behaviour. Can you guess what is weird in the output?
 
 ```
     const arrayA = [1,2,3]
@@ -12,18 +12,16 @@ If I run following script, something wierd will happen, can you tell me ?
     console.log(duplicate,arrayA)
 ```
 
-output for that example will be something like this
+The output for the previous script will be something like this : 
 ```
 [1, 2, 3, 4] [1, 2, 3, 4]
 ```
-Yes the value from `duplicate` array is correct as we expected, but why arrayA value is change ? 
 
+As expected, the value of `duplicate` array is correct. However we also see that in adding '4' to `duplicate` , the values in `arrayA` has also changed. Why is that? 
 
-this happen because we did assignment `duplicate = arrayA` and because assignment in array is work as reference, so when we try to copy using assignment 
-what happen actualy is copy the reference to the original array and not the value of the array itself.
+This happened due to the fact that we did an assignment of arrayA to duplicate via `duplicate = arrayA` . Since assignment operations with arrays work as reference, we copied a reference of `arrayA` to duplicate rather than copying its values into `duplicate`.
 
-
-to handle this problem you can use spread operator to clone `arrayA`, spread operator is a new feature that introduce in ES6,
+To handle this problem, you can use the `spread` operator to clone arrayA. The spread operator is a new feature that was introduced in ES6. The same is shown in the output of the following code: 
 
 ```
     const arrayA = [1,2,3]
@@ -31,7 +29,7 @@ to handle this problem you can use spread operator to clone `arrayA`, spread ope
     duplicate.push(4)
     console.log(duplicate,arrayA)
 ```
-output for that example
+Output :
 ```
 [1, 2, 3, 4] [1, 2, 3]
 ```
