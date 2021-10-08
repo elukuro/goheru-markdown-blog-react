@@ -38,12 +38,12 @@ function Header(props) {
       <h1 className="text-6xl orange font-extrabold">{heading}</h1>
       <div className="flex mt-5 justify-between items-end">
         <div>
-          <span className="text-1xl dark:text-gray-300">By goheru 🐫 |</span>
+          <span className="text-1xl dark:text-gray-300">By goheru🤖 | </span>
           <span
-            className="text-1xl dark:text-gray-300 cursor-pointer"
+            class="cursor-pointer rounded-full bg-gray-300 py-1 px-2 text-xs text-gray-900 dark:bg-gray-500 text-gray-300"
             onClick={toggleClass}
           >
-            &nbsp;{!isActive ? "🌞  " : "🌕"}
+            {!isActive ? "🌞 Light" : "Dark 🌕"}
           </span>
         </div>
         <UirenderBackToHome isHomepage={props.isHomepage} />
