@@ -1,37 +1,36 @@
 ---
-title: "Don't do this, a guide not to curse by other developer"
+title: "Developer malpractices to avoid"
 date: "6 May 2021"
 ---
 
 ### Write code as sort as possible 
-Don't ever write code too short and make it hard to understand by other developers, look at this code below
+Dont try to make your code as short as possible, which often leads to code thats hard to understand for other developers. Code like the one shown below is discouraged : 
 ```
 ‘?’ i = i ? i < 0 ? Math.max(0, len + i) : i : 0; 
-
 ```
-Can you guessed the value of variable i ?, If someone find this code he will spend his entire life just to find that variable i value is 0.  
+Is it possible to guess the value of variable `i`? Someone tasked with figuring it out might spend his whole life just to see that the value of `i` is 0 .
 
-### One letter variable
-Don't name you variable with a,b,c or d, a short variable name is hard to find and search by editor, and even we already found it we can't understand "the true meaning" of this variable until we analyze the code line by line.
+### One letter variables
+Don't name your variables as a,b,c or d. Asingle letter variable name is hard to find and search by editor.Moreover it is difficult to understand what the variable represents from its name unless we analyze the code line by line.
 
-### Use Abbreviation
-Don't name your variable with a meaningless abbreviation
+### Use Abbreviations
+Don't name your variable with pointless or meaningless abbreviations as shown below :
 ```
     list → lst
     begin_date →bgdt
     browser → bws
 ```
-So instead of `dteofbrth` you can use `dob` as abbreviation of date of birth
+you can use `dob` as abbreviation of date of birth instead of `dteofbrth` .
 
-### Being abstract
-Don't use abstract name such as `obj, value, data, elem` as your variable name unless they are the only variable within your code scope, it's hard to define `data` variable if we use more than one data, and what is `data` or `value` mean either ? everything has data and value so instead you can use `userData` or `customerData` to define more meaningful name
+### Being abstract with variable names
+Don't use abstract names such as `obj, value, data, elem` as your variable name unless they are the only variable within your code scope, it's hard to define `data` variable if we use more than one data. What does `data` or `value` mean anyway? Everything has data and value so using `userData` or `customerData` to provide more meaningful name is better.
 
-### Super function 
-Don't create a function that has many function, a good function only do one thing, `validateEmail(email)` function should only validate email format not to send or prefill email value, you can create other function to do that.
+### Super functions
+Don't create a function that has many other functions, a good function only does one thing, `validateEmail(email)` function should only validate email format and not send or prefill an email values. It is prefered to create other functions to do that.
 
-### Inconsistent
-If you define `showFirstName` function to preview first name then don't define `displayLastName` as function to preview last name, it's confusing and hard to debug when our code is getting bigger, be consistent with your prefix
-so instead of `displayLastName` you can define your function with `showLastName`, be consistent
+### Inconsistent naming
+If you define `showFirstName` function to preview first name then don't define `displayLastName` as function to preview last name. It is confusing and hard to debug when your code gets bigger. So you should take care to be consistent with your prefix. 
+naming your function `showLastName` instead of `displayLastName` would be more consistent.
 
-### Use reusable name
-Don't reuse a variable name because it's hard to know the actual value  and it's take times to analyze
+### Re-use variable names
+Don't reuse a variable name since that makes it too hard to know the actual value and takes more time to analyse the code.
