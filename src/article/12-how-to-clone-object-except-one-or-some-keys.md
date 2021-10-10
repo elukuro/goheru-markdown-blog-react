@@ -1,9 +1,9 @@
 ---
-title: "How to clone object except one or some keys"
+title: "Cloning an object easily while excluding certain keys"
 date: "23 Apr 2021"
 ---
 
-Let say you have an object that you want to use it as a payload to make a request
+Let say you have an object that you want to use as a payload to make a request :
 ```
 const payload = {
     'username': 'Mark',
@@ -11,12 +11,12 @@ const payload = {
     'redirectUrl':'/'
 }
 ```
-but you want to exclude `redirectUrl` from your object and I don't want to delete this key, hmmm it is easy doesn't it, just destructure the object and rearrange it to a new variable
+Suppose you want to exclude `redirectUrl` from your object but don't want to delete this key, on the surface level it is very easy, just destructure the object and rearrange it to a new variable as shown below :
 ```
     const {username,Hash} = payload;
     const newPayload = {username,Hash}
 ```
-but wait, what if your object is actually updated and now look like this
+but what if your object is actually updated and now look like this :
 ```
 const payload = {
     'username': 'Mark',
@@ -29,9 +29,9 @@ const payload = {
     'address':'planet earth'
 }
 ```
-seems like desctructuring and rearrange is kind of hardwork to do.
-### "Put rest to the last" technique to the rescue 
-simply put keys that you don't want to use and put the rest of it in the last
+destructuring and rearranging this is very tedious and hard to do.
+### "Put rest to the last" technique
+You can solve the above mentioned problem by putting keys that you dont want to use and putting the rest of the keys in the end
 ```
 const payload = {
     'username': 'Mark',
@@ -43,7 +43,9 @@ const payload = {
     'gender':'MALE',
     'address':'planet earth'
 }
+
 let{redirectUrl, ...newPayload} = payload
+
 newPayload
 /*
     {
@@ -58,7 +60,7 @@ newPayload
 */
 
 ```
-If you want to add another key to exclude, just simply put the keys name after `redirectUrl`
+If you want to add another key to exclude, just simply put the key's name after `redirectUrl` .
 
 
 

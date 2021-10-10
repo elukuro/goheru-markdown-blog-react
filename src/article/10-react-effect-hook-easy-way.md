@@ -1,13 +1,16 @@
 ---
-title: "How to use 'effect' hook easy way"
+title: "Using effect hook easily"
 date: 9 Apr 2021"
 ---
 
-### Hooks are additional in react 16.8, Hooks let us to use state and other React features without writing class wooow 😎
-In previous post I was explained about first hook `useState`, in this post I will explain about `useEffect`.
+### Hooks are a new addition made in react 16.8, allowing us to use state and other react feathers without writing classes
+
+
+Having explained about the `useState` hook, in the previous post, this post explains the other hook, namely `useEffect`.
+
 In sort `useEffect` let us perform side effect after we render component, let see example below.
 
-#### Example using class component
+Example using class component: 
 ```
 class PlusOne extends React.Component{
     // prepare and declaring state 
@@ -34,9 +37,10 @@ class PlusOne extends React.Component{
     }
 }
 ```
-#### Example function components using hooks
+>   gentle reminder that hooks don't work with class components
 
->   gently reminder that hooks doesn't work with class component 
+
+Example using hooks: 
 ```
    // import useState and useEffect from react lib
    import React, { useState,useEffect } from 'react';

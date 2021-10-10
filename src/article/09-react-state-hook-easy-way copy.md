@@ -1,13 +1,17 @@
 ---
-title: "How to use state hook easy way"
+title: "Using state hook easily"
 date: "2 Apr 2021"
 ---
 
-### Hooks are additional in react 16.8, Hooks let us to use state and other React features without writing class wooow 😎
-The first "hook" that we will learn is `useState`, and the other "hook" is `useEffect`. `useState` is simillar to declaring state with class component include the `setState` functionality in one wrap.
+### Hooks are a new addition made in react 16.8, allowing us to use state and other react feathers without writing classes
 
 
-#### Example using class component
+>The first "hook" that we will learn is `useState`, and the other is `useEffect` . 
+
+`useState` is simillar to declaring state with class component, including the `setState` functionality in one wrap.
+
+
+Example using class component: 
 ```
 class PlusOne extends React.Component{
     // prepare and declaring state 
@@ -28,9 +32,10 @@ class PlusOne extends React.Component{
     }
 }
 ```
-#### Example function components using hooks
 
->   gently reminder that hooks doesn't work with class component 
+>   gentle reminder that hooks don't work with class components
+
+Example using hooks: 
 ```
    // import useState from react lib
    import React, { useState } from 'react';
@@ -51,8 +56,11 @@ class PlusOne extends React.Component{
        )
    }
 ```
+
+
+
 ### Conclusion
 
-- State hook is similar to declaring state
-- React hook can't use in class components 
-- React hook make our components looks more clean
+- State hooks are similar to declaring a state
+- React hooks can't be used in class components 
+- React hooks make our components looks more clean
