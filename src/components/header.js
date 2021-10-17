@@ -40,7 +40,7 @@ function Header(props) {
         <div>
           <span className="text-1xl dark:text-gray-300">By goheru🤖 | </span>
           <span
-            class="cursor-pointer rounded-full bg-gray-300 py-1 px-2 text-xs text-gray-900 dark:bg-gray-500 text-gray-300"
+            className="cursor-pointer rounded-full bg-gray-300 py-1 px-2 text-xs text-gray-900 dark:bg-gray-500 text-gray-300"
             onClick={toggleClass}
           >
             {!isActive ? "🌞 Light" : "Dark 🌕"}
