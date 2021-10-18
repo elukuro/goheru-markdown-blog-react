@@ -4,31 +4,28 @@ date: "9 September 2021"
 ---
 
 ## Use meaningful names 
-Yes I know that you already know but honestly put meaningful name for a variable is not easy
-Just to remember that naming variable sould be descriptive, usually variable name in javascript write in camelCase
-and for `Boolean` variable name is usually answer question such as `isActive` `hasParams` etc.
+Yes, I know that you already know but to be honest, putting a meaningful name for a variable is not easy. We must always remember that the name given to a variable sould be descriptive.Different languages sometimes have different conventions as well, for example variable names in javascript is usually writen in `camelCase`.as for `boolean` variables, their names usually answer questions such as `isActive` `hasParams` etc.
 
 ```
 // ❌ Don't 
 
-const x= "Jean Doe";
-const bar= 23;
-const active= true;
+const x = "Jean Doe";
+const bar = 23;
+const active = true;
 
 // ✅ Do
 
-const fullName= "Jean Doe";
-const Age= 23;
-const isActive=true;
+const fullName = "Jean Doe";
+const Age = 23;
+const isActive = true;
 ```
 
-## No hardcode values 
-Hardcode is hard to maintain, instead of put constant values, you can put it inside a meaningful and searchable constants, by the way usually constant 
-write with SCREAM_SNAKE_CASE
+## Dont hardcode values 
+
+Hard coded values are difficult to maintain. Its a pain to keep track of and even more of a hassle to change. Instead, using a meaningful and searchable constant name (using `SCREAM_SNAK_CASE`) for a constant value is the way to go as shown for the function parameter shown below: 
 
 ```
-
-function setConfig(hasKey=''){
+function setConfig(hasKey = ''){
     ...
 };
 
@@ -39,16 +36,14 @@ setConfig('KLKJFI123123KJHF');
 
 // ✅ Do
 
-const HASH_KEY ='KLKJFI123123KJHF';
+const HASH_KEY = 'KLKJFI123123KJHF';
 setConfig(HASH_KEY);
-
-
 ```
 
 
-## Put only Necessary 
+## Avoid overly descriptive variable names
 
-Don't add redundant context to variable that already described itself
+Don't add redundant context to a variable that can already describe itself
 
 ```
 // ❌ Don't 

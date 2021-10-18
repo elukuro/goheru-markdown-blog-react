@@ -1,8 +1,10 @@
 ---
-title: "How to calling for functions conditionally"
+title: "Conditional Function Calls"
 date: "16 July 2021"
 ---
-You can create a shorthand of calling functions conditionally, usually we write functions conditions like this 
+
+Usually when we want to call two functioned based on a condition, the code is often clunky and looks somewhat like this:
+
 
 ```
 const type = 'greeting';
@@ -15,17 +17,18 @@ function goodbye() {
     console.log('goodbye')
 }
 
-if(type==='greeting'){
+if(type == 'greeting'){
     greeting()
 }else{
     goodbye()
 }
 ```
 
-Instead of using that, we can reduce the line number this way
+However, there exists a simple shorthand to simplify the above code into a single line as shown below: 
+
 
 ```
-(type==='greeting' ? greeting:goodbye)()
+(type == 'greeting' ? greeting : goodbye)()
 ``` 
 
 
