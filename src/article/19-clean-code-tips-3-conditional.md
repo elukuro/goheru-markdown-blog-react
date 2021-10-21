@@ -3,8 +3,9 @@ title: "Clean code tips #3: Conditionals"
 date: "16 September 2021"
 ---
 
-## Always positive
-It's need extra effort to understanding logic in negative conditional, avoid it as you can
+## Positive Conditionals over negative ones
+
+understanding negative conditionals is a bit more cumbersome as compared to understanding positive ones so it is prefered to employ those more
 
 ```
 // ❌ Don't 
@@ -30,7 +31,7 @@ if(userVerified){
 ```
 
 
-## Use Shorthands if possible
+## Shorthands
 
 Shorthands make your code more compact and easier to read
 ```
@@ -61,7 +62,7 @@ const isUserValid = user.isVerified() && user.isActive()
 
 ## Object literals over Switch statements 
 
-Object literals make your switch conditions more easy to understand
+Object literals make your switch conditions easier to understand
 ```
 // ❌ Don't
 
@@ -91,8 +92,12 @@ const getStatus = (status) => statusColors[status] || statusColors.loading;
 ```
 
 
-## Use optional chaining 
-optional chaining is not working with IE browser yet, see [here](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Optional_chaining) 
+## Optional chaining 
+
+Optional chaining is a very useful paradigm to use to make your code simpler and more concise. Unfortunately it doesnt work with the IE browser as of now.
+
+It works as shown below : 
+
 ```
 const alice = {
     name:'Alice',
@@ -109,3 +114,5 @@ const cat = (alice && alice.cat && alice.cat.name) || 'N/A';
 const cat = alice?.cat?.name ?? 'N/A';
 
 ```
+
+click [here](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Optional_chaining) for more about optional chaining.

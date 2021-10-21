@@ -1,11 +1,12 @@
 ---
-title: "Clean code tips #2: Function"
+title: "Clean code tips #2: Functions"
 date: "11 September 2021"
 ---
 
-## Use descriptive name 
-Again, name your function descriptively, it's okay if your function name are lengthly  as long as describe what the functions actually does.
-function name usually has a form of action verbs 
+## Use descriptive names
+
+Always remember to name your functions descriptively. It is allright if your function names are lengthy as long as they describe what the function does. Function names usually take the form of action verbs: 
+
 
 ```
 // ❌ Don't 
@@ -30,8 +31,9 @@ function isDecline(user){
 
 ```
 
-## Add default arguments for extra save 
-Default argument can prevent your function from returning `undefined` , actually you can do short-circuiting as well but default argument is more cleaner 
+## Add default arguments for extra safety
+
+Default arguments can prevent ur function from returning `undefined` and getting an error. Technically you can perform short-circuiting to prevent this from happening but using default arguments is a better way to solve that problem.
 
 ```
 // ❌ Don't
@@ -54,9 +56,14 @@ printFromDirectory()
 
 ```
 
-## Limit number of arguments 
+## Limit the number of arguments 
+
+It is recommended to have anywhere from 0 to 2 arguments max for a single function. Any more than that and your function might seem too complex and can be made better by dividing into smaller ones.
+
+If you want to pass data through functions you can use `Object`
+
 function argument should only have zero, one or two arguments, more than that mean your functions is to complex and need to devided to smaller one.
-if you want to pass data through function you can use `object`
+if you want to pass data through function you can use an `object`
 
 ```
 // ❌ Don't 
@@ -79,10 +86,10 @@ sendUserData(userData)
 
 ```
 
-## Avoid multiple action in function and avoid using flag as arguments 
-A function should done one thing at a time, this rules reduces function size, complexity with make it easier to debug and refactor, 
-generally the line number of a function should not more than 20-30 lines if possible, also a flag in arguments mean the function can still be 
-simplified 
+## Avoid multiple actions and flag as arguments
+
+A function is best defined when it does one operation or action at a time. This reduces the function size, complexity and makes it easier to debug and refactor. Generally having a line range of 20-30 is acceptable and flags as arguments can be simplified as shown below :
+
 
 ```
 // ❌ Don't 
@@ -121,7 +128,8 @@ function devideNumber(x,y){
 ```
 
 ## Don't repeat yourself 
-Duplicate code is not a good sign, if you repeat yourself you will have to update multiple places wherever there is logic change 
+
+If you find yourself with repetitive code, make sure to change it before its too late since it will become a hastle to make changes in the logic later on.
 
 ```
 // ❌ Don't 
@@ -161,7 +169,8 @@ function getVehichlesList(vehicles){
 ```
 
 ## Avoid side effects 
-Side effects can resulting undesirabled behaviours all side effets have to centralized
+
+Side effects of code refer to unexpected developments in results somewhere due to changes elsewhere. They are undesirable and causes of side effects are easier to fix if they are centralized
 
 ```
 // ❌ Don't 

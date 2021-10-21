@@ -1,9 +1,9 @@
 ---
-title: "This is wierd"
+title: "This is weird"
 date: "18 September 2021"
 ---
 
-I read 'decoding javascript' a few days ago, this book is explaining about javascript very deep, and I found out something strange happen with string operation logic, here what I mean 
+While reading a book 'Decoding javascript', a book explaining javascript in very deep detail, I came across something very interesting with respect to String operation logic. This is what I mean : 
 
 ```
 

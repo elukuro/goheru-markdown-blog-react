@@ -22,7 +22,7 @@ const isActive = true;
 
 ## Dont hardcode values 
 
-Hard coded values are difficult to maintain. Its a pain to keep track of and even more of a hassle to change. Instead, using a meaningful and searchable constant name (using `SCREAM_SNAK_CASE`) for a constant value is the way to go as shown for the function parameter shown below: 
+Hard coded values are difficult to maintain. Its a pain to keep track of and even more of a hassle to change. Instead, using a meaningful and searchable constant name (using `SCREAM_SNAKE_CASE`) for a constant value is the way to go as shown for the function parameter shown below: 
 
 ```
 function setConfig(hasKey = ''){
