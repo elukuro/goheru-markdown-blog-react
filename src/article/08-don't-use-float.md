@@ -11,15 +11,17 @@ Of course you can use float values, don't be silly, but make sure you use it wis
 <div style="
     background: blue;
     display: block;
-    clear: both; // cost that I mean 
-    overflow: hidden; // just whyyy 😔  
+    clear: both; // cost that I mean
+    overflow: hidden; // just whyyy 😔
 "><p>container here </p>
     <div style="background:red;float:left;height: 100px;width: 100px;">child 1</div>
     <div style="background:red;float:left;height: 100px;width: 100px;">child 2</div>
     <div style="background:red;float:left;height: 100px;width: 100px;">child 3</div>
 </div>
 ```
-Sometimes when we create a website, we'll have to create `div`s that divide the container width equaly. When doing so, our approach is usually something like this : 
+
+Sometimes when we create a website, we'll have to create `div`s that divide the container width equaly. When doing so, our approach is usually something like this :
+
 ```
     <div class="container">
         <div style="
@@ -39,10 +41,9 @@ Sometimes when we create a website, we'll have to create `div`s that divide the 
     </div>
 ```
 
-The above method works fine when the elements are simple. However as they get more and more complex, it gets harder to make proper divisions using float values unless you use the clear-fix in your container. 
+The above method works fine when the elements are simple. However as they get more and more complex, it gets harder to make proper divisions using float values unless you use the clear-fix in your container.
 
-An even better way of doing this is actually by using the `flex` value for the `display` attribute as shown below: 
-
+An even better way of doing this is actually by using the `flex` value for the `display` attribute as shown below:
 
 ```
 <div class="container" style="

@@ -26,12 +26,24 @@ While reading a book 'Decoding javascript', a book explaining javascript in very
 
 
 '1'-'1' 
-// output 0
+// output 0 , it's correct but why ? 
 
 '1'-'1'/2
 // output 0.5
 
-// It's correct , but why ? 
+```
+### Update
+I find out the answer here is the breakdown 
+
+```
+// '1'+'1'/2 = 12 
+
+// what happen here is first javascript work with divide operator 
+'1'/2
+// output = 0.5 
+// then continue the process with 
+'1'+0.5
+// output = 10.5
 
 ```
 
