@@ -40,3 +40,17 @@ with asynchronous.
 The best way to use asynchronous is when your website working with server to fetching data or response, istead of waiting all
 data from server is loaded that maybe takes more than one minutes (depend on speed of your internet and server speed to resolve request)
 you could use asynchronous to make sure that code ahead will execute and javascript will not waiting server response to complete.
+
+Here is real life example of asynchronous implementation
+
+```
+    let url='https://fierce-headland-02005.herokuapp.com/my-book';
+    async function fetchData(){
+        try{
+            const response = await fetch(url,{method:'GET',headers:{'Content-Type':'application/json'}})
+            return response.json()
+        }catch(err){
+            console.log(err)
+        }
+    }
+```
