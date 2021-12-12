@@ -53,4 +53,5 @@ Here is real life example of asynchronous implementation
             console.log(err)
         }
     }
+    let test = new fetchData().then(response=> console.log(response))
 ```
