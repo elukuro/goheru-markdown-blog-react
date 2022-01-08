@@ -22,31 +22,19 @@ Here some simple example:
 Here another example:
 
 ```
-    function add(){
-        let counter = 0;
-        return function(){
-            counter+=1;
-            return counter;
+    function myName(){
+        let name = 'Herro';
+        function displayName(){
+            return name;
         }
+        return displayName;
     }
-    let setCounter = add();
-    setCounter()
-    // 1
-    setCounter()
-    // 2
+    let myFuncName = myName();
+    myFuncName();
+    // Herro
 ```
 
 Let's see what going on
 
-First time call add() function
-
-- Inner function access value of counter variable defined in the outer function (value of counter variable = 0)
-- Inner function update counter value with increase by 1 (value of counter variable = 1)
-- Inner function return counter value
-- Outer function return based on return value from inner function (return value from inner function = 1)
-- Return from outer function is 1
-
-Second time call add() function
-
-- counter variable value already increase by 1 so value of counter variable is 1
-- repeat process
+myName() function is run and place inside myFuncName variable and become reference to displayName() function, dispayName is'nt invoke yet.
+since displayName() has reference to myName() within which variable name exists, then "Herro" is passed when myFuncName() are invoke.
