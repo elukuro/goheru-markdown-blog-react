@@ -17,7 +17,7 @@ const mother = new Person('Jean','Doe',28);
 
 ```
 
-At proceeding example, we call `Person` function two times, thereby create two different instance of the functions, since we use `new` keyword
+In those example, we call `Person` function two times, thereby create two different instance of the functions, since we use `new` keyword
 it create two different object that set into `father` and `mother` variable.
 
 However we cannot add new properties or methods to an object constructor directly in the way we that we use to add properties or methods to an object.
