@@ -6,7 +6,7 @@ function UirenderBackToHome(props) {
     return (
       <div>
         <Link to="/" className="text-xs underline text-blue-600 antialiased ">
-          Back to home 🏠
+          Back to List 🏠
         </Link>
       </div>
     );
@@ -35,10 +35,10 @@ function Header(props) {
   const heading = "<DevTips/>";
   return (
     <div className="pt-10 pb-10 container mx-auto max-w-lg">
-      <h1 className="text-6xl orange font-extrabold">{heading}</h1>
-      <div className="flex mt-5 justify-between items-end">
+      <h1 className="text-4xl orange font-extrabold">{heading}</h1>
+      <div className="flex mt-5 justify-between items-center">
         <div>
-          <span className="text-1xl dark:text-gray-300">By goheru🤖 | </span>
+          <span className="text-sm dark:text-gray-300">By goheru 😸 </span>
           <span
             className="cursor-pointer rounded-full bg-gray-300 py-1 px-2 text-xs text-gray-900 dark:bg-gray-500 text-gray-300"
             onClick={toggleClass}
