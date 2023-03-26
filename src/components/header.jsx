@@ -5,7 +5,7 @@ function UirenderBackToHome(props) {
   if (!props.isHomepage) {
     return (
       <div>
-        <Link to="/" className="text-xs underline text-blue-600 antialiased ">
+        <Link to="/" className="text-xs underline text-gray-100 antialiased ">
           Back to List 🏠
         </Link>
       </div>
@@ -14,7 +14,7 @@ function UirenderBackToHome(props) {
   return (
     <div>
       <a
-        className="text-xs underline text-blue-600 antialiased "
+        className="text-xs underline text-gray-100 antialiased "
         href="https://goheru-project.web.app/#/"
       >
         Back to goheru 🏠
@@ -34,11 +34,15 @@ function Header(props) {
   };
   const heading = "<DevTips/>";
   return (
-    <div className="pt-10 pb-10 container mx-auto max-w-lg">
-      <h1 className="text-4xl orange font-extrabold">{heading}</h1>
-      <div className="flex mt-5 justify-between items-center">
+    <div className="mx-auto flex justify-between bg-gray-900 p-3 fixed w-full">
+      <div>
+        <h1 className="text-4xl orange font-extrabold">{heading}</h1>
+        <span className="text-sm text-gray-100 dark:text-gray-300">
+          By goheru 😸{" "}
+        </span>
+      </div>
+      <div className="flex mt-5 justify-between gap-3">
         <div>
-          <span className="text-sm dark:text-gray-300">By goheru 😸 </span>
           <span
             className="cursor-pointer rounded-full bg-gray-300 py-1 px-2 text-xs text-gray-900 dark:bg-gray-500 text-gray-300"
             onClick={toggleClass}

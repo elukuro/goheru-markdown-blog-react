@@ -21,15 +21,15 @@ function App() {
     <Router>
       <Switch>
         <Route exact path="/">
-          <div className="container mx-auto px-4">
+          <div className="mx-auto">
             <UiHeader isHomepage={true} />
-            <div className="container mx-auto max-w-lg">
+            <div className="mx-auto max-w-lg pt-40 px-5">
               <UiArticleList list={articleList} />
             </div>
           </div>
         </Route>
         <Route path="/posts/:slug">
-          <div className="container mx-auto px-4">
+          <div className="mx-auto">
             <UiHeader />
             <BlogPost />
           </div>

@@ -23,7 +23,7 @@ const Post = ({ slug }) => {
     if (content) {
       return (
         <div>
-          <div className="pt-10">
+          <div className="">
             <span className="text-black-400 font-thin dark:text-gray-200">
               {content.data.date}
             </span>
@@ -49,7 +49,7 @@ const Post = ({ slug }) => {
     <>
       <div>
         <div className="container mx-auto max-w-screen-lg pb-20">
-          <div className="markdown-body mt-20">
+          <div className="markdown-body pt-40 px-5">
             <RenderData content={blog} />
           </div>
         </div>
